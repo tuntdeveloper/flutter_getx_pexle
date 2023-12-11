@@ -43,9 +43,9 @@ class MyApp extends StatelessWidget {
                 color: Colors.white, fontSize: 12, fontWeight: FontWeight.w400),
           ),
         ),
+        initialRoute: AppRoute.signUp.getPath,
         getPages: AppRoute.values
-            .map((e) => GetPage(name: e.getPath, page:
-        () => e.getPage))
+            .map((e) => GetPage(name: e.getPath, page: () => e.getPage))
             .toList(),
         home: Get.find<SharedPreferences>()
                     .getString(PrefConstant.PREF_TOKEN_KEY) !=

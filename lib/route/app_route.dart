@@ -17,14 +17,12 @@ enum AppRoute {
     }
   }
 
-  Widget  get getPage {
+  Widget get getPage {
     switch (this) {
       case AppRoute.home:
-        return  HomeScreen();
+        return HomeScreen();
       case AppRoute.signUp:
         return SignUpScreen();
     }
   }
 }
-
-
